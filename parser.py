@@ -8,19 +8,23 @@ import os
 #Deleting an old files to avoid repeating old data
 if os.path.isfile('persons_links.txt'):
     os.remove('persons_links.txt')
+    print('\n' + '#' * 50)
     print('The old file "persons_links.txt" has been deleted!\nA new file will be created!')
-    print('--------------------------------------------------\n')
+    print('#' * 50 + '\n')
 else:
+    print('\n' + '#' * 45)
     print('The file "persons_links.txt" will be created!')
-    print('---------------------------------------------\n')
+    print('#' * 45 + '\n')
 
 if os.path.isfile('data.json'):
     os.remove('data.json')
+    print('\n' + '#' * 42)
     print('The old file "data.json" has been deleted!\nA new file will be created!')
-    print('--------------------------------------------------\n')
+    print('#' * 42 + '\n')
 else:
+    print('\n' + '#' * 37)
     print('The file "data.json" will be created!')
-    print('-------------------------------------\n')
+    print('#' * 37 + '\n')
 
 
 
